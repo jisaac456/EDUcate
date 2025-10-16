@@ -15,32 +15,34 @@ body, html {
   color: #fff;
 }
 
-/* 🔹 Fondo personalizable */
-.hero {
+/* Pantallas */
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🔹 Fondo Hero */
+#screen-home {
   position: relative;
-  height: 100vh;
   background-image: url('TU_IMAGEN_AQUI.jpg'); /* Cambia esta línea por tu imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  padding: 20px;
 }
 
-/* Capa semitransparente sobre el fondo */
-.overlay {
+#screen-home .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 
-/* Contenido principal */
-.content {
+#screen-home .content {
   position: relative;
   z-index: 2;
   max-width: 800px;
