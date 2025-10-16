@@ -26,7 +26,7 @@
     .hero {
       position: relative;
       height: 100vh;
-      background-image: url('https://chatgpt.com/backend-api/estuary/content?id=file_0000000008e46230a7c009e20e1f28e9&ts=489050&p=fs&cid=1&sig=5bb79ae9a49840223bb37d72d1b6af21836718bb7e3d4af386c3fc683f7e15fa&v=0');
+      background-image: url('https://chatgpt.com/backend-api/estuary/content?id=file_0000000008e46230a7c009e20e1f28e9&ts=489052&p=fs&cid=1&sig=4877be30c7437a3c0d26720c4e8c6bf94e4c7b04d115c89a477d814fbcef69b4&v=0');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
