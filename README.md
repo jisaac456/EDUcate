@@ -26,7 +26,7 @@
     .hero {
       position: relative;
       height: 100vh;
-      background-image: url('TU_IMAGEN_AQUI.jpg'); /* 🔁 Cambia esta línea por tu imagen */
+      background-image: url(https://chatgpt.com/backend-api/estuary/content?id=file_0000000008e46230a7c009e20e1f28e9&ts=489050&p=fs&cid=1&sig=5bb79ae9a49840223bb37d72d1b6af21836718bb7e3d4af386c3fc683f7e15fa&v=0)'); /* 🔁 Cambia esta línea por tu imagen */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
