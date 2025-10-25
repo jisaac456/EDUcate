@@ -26,13 +26,19 @@ body, html {
   padding: 20px;
 }
 
-/* 🔹 Fondo Hero */
-#screen-home {
+.hero {
   position: relative;
-  background-image: url('https://chatgpt.com/backend-api/estuary/content?id=file_0000000008e46230a7c009e20e1f28e9&ts=489277&p=fs&cid=1&sig=cde09afed8efb979ec1f7d470433ba3d87143ce37231239ebb7487f0f8e0f543&v=0'); /* Cambia esta línea por tu imagen */
+  height: 100vh;
+  background-image: url('https://chatgpt.com/backend-api/estuary/content?id=file_0000000008e46230a7c009e20e1f28e9&ts=489277&p=fs&cid=1&sig=cde09afed8efb979ec1f7d470433ba3d87143ce37231239ebb7487f0f8e0f543&v=0');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 #screen-home .overlay {
