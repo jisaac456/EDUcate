@@ -29,10 +29,13 @@ body, html {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Cambiado de center a flex-start */
   text-align: center;
   flex-direction: column;
-  padding: 20px;
+  padding-top: 200px; /* 🔹 Baja el bloque hacia abajo */
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 /* Capa semitransparente sobre el fondo */
