@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     es: {
-      title: "EDUcate",
+      title: "EDUcate 2025",
       slogan: "Aprender nunca fue tan fácil y divertido",
       start: "Comenzar ahora",
       learn: "Saber más",
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       infoText: "EDUcate es una plataforma educativa interactiva diseñada para ayudarte a aprender de forma fácil y divertida. Selecciona un curso y comienza tu camino de aprendizaje."
     },
     en: {
-      title: "EDUcate",
+      title: "EDUcate 2025",
       slogan: "Learning has never been so easy and fun",
       start: "Start now",
       learn: "Learn more",
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Elementos
   const langSelect = document.getElementById('langSelect');
   const title = document.getElementById('title');
   const slogan = document.getElementById('slogan');
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const footer = document.getElementById('footer');
   const courseCards = document.querySelectorAll('.card');
 
-  // Pantallas
   const screens = {
     home: document.getElementById('screen-home'),
     courses: document.getElementById('screen-courses'),
@@ -57,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const backFromCourses = document.getElementById('back-from-courses');
   const backFromInfo = document.getElementById('back-from-info');
 
-  // Navegación entre pantallas
   startBtn.addEventListener('click', () => {
     screens.home.style.display = 'none';
     screens.courses.style.display = 'flex';
@@ -78,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     screens.home.style.display = 'flex';
   });
 
-  // Traducción
   langSelect.addEventListener('change', (e) => {
     const lang = e.target.value;
     const t = translations[lang];
