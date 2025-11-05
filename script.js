@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       coursesTitle: "Nuestros cursos",
       infoTitle: "Sobre EDUcate
-        EDUcate es una plataforma web educativa que permite aprender de forma divertida, sencilla y gratuita.
+       <span style="color:#7b2cbf; font-weight:bold;">EDUcate es una plataforma web educativa que permite aprender de forma divertida, sencilla y gratuita.
 
 Incluye actividades interactivas, juegos y retos.
 
-Ayuda a que todos los estudiantes, sin importar su ubicación, puedan estudiar y crecer.",
+Ayuda a que todos los estudiantes, sin importar su ubicación, puedan estudiar y crecer.</span>",
       infoText: "EDUcate es una plataforma educativa interactiva diseñada para ayudarte a aprender de forma fácil y divertida. Selecciona un curso y comienza tu camino de aprendizaje."
     },
     en: {
