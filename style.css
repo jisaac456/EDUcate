@@ -15,35 +15,28 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  color: var(--texto-oscuro);
   background-color: var(--gris-claro);
 }
 
-/* 🔹 Fondo personalizable */
+/* 🔹 Sección principal con fondo */
 .hero {
   position: relative;
   height: 100vh;
   background-image: url('https://chatgpt.com/backend-api/estuary/content?id=file_0000000008e46230a7c009e20e1f28e9&ts=489277&p=fs&cid=1&sig=cde09afed8efb979ec1f7d470433ba3d87143ce37231239ebb7487f0f8e0f543&v=0');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Cambiado de center a flex-start */
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 100px; /* 🔹 Baja el texto */
   text-align: center;
-  flex-direction: column;
-  padding-top: 200px; /* 🔹 Baja el bloque hacia abajo */
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
 }
 
-/* Capa semitransparente sobre el fondo */
+/* Capa oscura encima del fondo */
 .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
 }
 
 /* Contenido principal */
@@ -58,17 +51,15 @@ h1 {
   color: var(--amarillo);
   margin-bottom: 10px;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-  letter-spacing: 2px;
 }
 
 p {
   font-size: 1.3rem;
   color: var(--blanco);
   margin-bottom: 30px;
-  font-weight: 500;
 }
 
-/* Botones principales */
+/* 🔘 Botones */
 .btn {
   padding: 14px 28px;
   margin: 10px;
@@ -119,25 +110,33 @@ select {
   box-shadow: var(--sombra);
 }
 
-/* 🔹 Sección de cursos */
+/* 🔹 Pantallas internas */
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* 🔹 Cursos */
 .courses {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
-  margin: 0 auto;
-  padding: 60px 20px;
+  margin: 40px auto;
+  padding: 40px 20px;
   max-width: 1100px;
   background: linear-gradient(135deg, #e0e7ff, #fef3c7);
-  border-top: 4px solid var(--morado);
-  border-bottom: 4px solid var(--morado);
+  border-radius: 16px;
 }
 
 .card {
   background: var(--blanco);
-  color: var(--texto-oscuro);
   border-radius: 16px;
   padding: 25px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--sombra);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
 }
@@ -153,12 +152,6 @@ select {
   margin-bottom: 10px;
 }
 
-.card p {
-  color: #374151;
-  font-size: 1.1rem;
-  line-height: 1.4;
-}
-
 /* Footer */
 footer {
   background: var(--morado);
@@ -167,5 +160,4 @@ footer {
   padding: 25px;
   font-size: 1rem;
   font-weight: 500;
-  margin-top: 0;
 }
