@@ -13,7 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
         {title: "🎨 Arte", desc: "Desarrolla tu creatividad y expresión artística."}
       ],
       coursesTitle: "Nuestros cursos",
-      infoTitle: "Sobre EDUcate",
+      infoTitle: "Sobre EDUcate
+        EDUcate es una plataforma web educativa que permite aprender de forma divertida, sencilla y gratuita.
+
+Incluye actividades interactivas, juegos y retos.
+
+Ayuda a que todos los estudiantes, sin importar su ubicación, puedan estudiar y crecer.",
       infoText: "EDUcate es una plataforma educativa interactiva diseñada para ayudarte a aprender de forma fácil y divertida. Selecciona un curso y comienza tu camino de aprendizaje."
     },
     en: {
