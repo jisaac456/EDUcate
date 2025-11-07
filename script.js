@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     es: {
-      title: "EDUcate 2025",
+      title: "EDUcate",
       slogan: "Aprender nunca fue tan fácil y divertido",
       start: "Comenzar ahora",
       learn: "Saber más",
-      footer: "EDUcate © 2025 — Aprende, crece y transforma tu futuro 🌟",
+      footer: "EDUcate © 2025 —  JISAAC",
       courses: [
         {title: "📘 Inglés", desc: "Aprende vocabulario, pronunciación y gramática."},
         {title: "🧮 Matemáticas", desc: "Practica operaciones y resuelve desafíos numéricos."},
