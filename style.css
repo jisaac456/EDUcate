@@ -168,14 +168,14 @@ footer {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 60px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   box-shadow: var(--sombra);
   text-align: right; /* ✅ Texto alineado a la derecha */
-  color: var(--texto-oscuro);
-  direction: rtl; /* ✅ Dirección visual de derecha a izquierda */
+  direction: rtl; /* ✅ Dirección visual */
   overflow: hidden;
   animation: aparecer 0.8s ease-in-out;
+  color: var(--texto-oscuro); /* ✅ Color oscuro para todo el texto */
 }
 
 /* 🔹 Franja lateral decorativa */
@@ -204,6 +204,7 @@ footer {
 .info-content li {
   font-size: 1.1rem;
   line-height: 1.6;
+  color: var(--texto-oscuro); /* ✅ Asegura color oscuro */
   text-align: right;
 }
 
@@ -220,7 +221,7 @@ footer {
   font-weight: 600;
 }
 
-/* 🔸 Animación de entrada */
+/* 🔸 Animación */
 @keyframes aparecer {
   from {
     opacity: 0;
