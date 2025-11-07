@@ -161,3 +161,34 @@ footer {
   font-size: 1rem;
   font-weight: 500;
 }
+.info-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #1f2937;
+}
+
+.info-content h3 {
+  color: var(--morado);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.info-content p, 
+.info-content li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.info-content ul, 
+.info-content ol {
+  margin-left: 25px;
+}
+
+.info-content b {
+  color: var(--morado);
+}
