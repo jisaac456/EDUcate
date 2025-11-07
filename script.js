@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
       infoText: "EDUcate es una plataforma educativa interactiva diseñada para ayudarte a aprender de forma fácil y divertida. Selecciona un curso y comienza tu camino de aprendizaje."
     },
     en: {
-      title: "EDUcate 2025",
+      title: "EDUcate",
       slogan: "Learning has never been so easy and fun",
       start: "Start now",
       learn: "Learn more",
-      footer: "EDUcate © 2025 — Learn, grow, and transform your future 🌟",
+      footer: "EDUcate © 2025 — JISAAC",
       courses: [
         {title: "📘 English", desc: "Learn vocabulary, pronunciation and grammar."},
         {title: "🧮 Math", desc: "Practice operations and solve numerical challenges."},
