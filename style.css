@@ -28,7 +28,7 @@ body, html {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 100px; /* 🔹 Baja el texto */
+  padding-bottom: 100px;
   text-align: center;
 }
 
@@ -161,34 +161,86 @@ footer {
   font-size: 1rem;
   font-weight: 500;
 }
+
+/* 🔹 Sección “Saber más” */
 .info-content {
+  position: relative;
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 60px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  color: #1f2937;
+  box-shadow: var(--sombra);
+  text-align: right; /* ✅ Texto alineado a la derecha */
+  color: var(--texto-oscuro);
+  direction: rtl; /* ✅ Dirección visual de derecha a izquierda */
+  overflow: hidden;
+  animation: aparecer 0.8s ease-in-out;
 }
 
+/* 🔹 Franja lateral decorativa */
+.info-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--morado), var(--rosado));
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Títulos internos */
 .info-content h3 {
   color: var(--morado);
   margin-top: 20px;
   margin-bottom: 10px;
+  text-align: right;
 }
 
-.info-content p, 
+/* Párrafos y listas */
+.info-content p,
 .info-content li {
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: right;
 }
 
-.info-content ul, 
+/* Listas */
+.info-content ul,
 .info-content ol {
-  margin-left: 25px;
+  margin-right: 25px;
+  margin-left: 0;
 }
 
+/* Negritas */
 .info-content b {
   color: var(--morado);
+  font-weight: 600;
+}
+
+/* 🔸 Animación de entrada */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 🔹 Adaptable en pantallas pequeñas */
+@media (max-width: 768px) {
+  .info-content {
+    text-align: center;
+    direction: ltr;
+    padding: 30px 20px;
+  }
+
+  .info-content::before {
+    display: none;
+  }
 }
