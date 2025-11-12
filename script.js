@@ -1,36 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     es: {
-      title: "EDUcate",
+      title: "EDUcate 2025",
       slogan: "Aprender nunca fue tan fácil y divertido",
       start: "Comenzar ahora",
       learn: "Saber más",
-      footer: "EDUcate © 2025 —  JISAAC",
-      courses: [
-        {title: "📘 Inglés", desc: "Aprende vocabulario, pronunciación y gramática."},
-        {title: "🧮 Matemáticas", desc: "Practica operaciones y resuelve desafíos numéricos."},
-        {title: "🧪 Ciencias", desc: "Explora el mundo natural a través de experimentos divertidos."},
-        {title: "🎨 Arte", desc: "Desarrolla tu creatividad y expresión artística."}
-      ],
-      coursesTitle: "Nuestros cursos",
-      infoTitle: "Sobre EDUcate",
-      infoText: "EDUcate es una plataforma educativa interactiva diseñada para ayudarte a aprender de forma fácil y divertida. Selecciona un curso y comienza tu camino de aprendizaje."
+      footer: "EDUcate © 2025 — Aprende, crece y transforma tu futuro 🌟",
+      coursesTitle: "Nuestros cursos"
     },
     en: {
-      title: "EDUcate",
+      title: "EDUcate 2025",
       slogan: "Learning has never been so easy and fun",
       start: "Start now",
       learn: "Learn more",
-      footer: "EDUcate © 2025 — JISAAC",
-      courses: [
-        {title: "📘 English", desc: "Learn vocabulary, pronunciation and grammar."},
-        {title: "🧮 Math", desc: "Practice operations and solve numerical challenges."},
-        {title: "🧪 Science", desc: "Explore the natural world through fun experiments."},
-        {title: "🎨 Art", desc: "Develop your creativity and artistic expression."}
-      ],
-      coursesTitle: "Our Courses",
-      infoTitle: "About EDUcate",
-      infoText: "EDUcate is an interactive educational platform designed to help you learn easily and have fun. Select a course and start your learning journey."
+      footer: "EDUcate © 2025 — Learn, grow, and shape your future 🌟",
+      coursesTitle: "Our Courses"
     }
   };
 
@@ -40,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const startBtn = document.getElementById('startBtn');
   const learnMoreBtn = document.getElementById('learnMoreBtn');
   const footer = document.getElementById('footer');
-  const courseCards = document.querySelectorAll('.card');
+  const coursesTitle = document.getElementById('courses-title');
 
   const screens = {
     home: document.getElementById('screen-home'),
@@ -48,49 +32,33 @@ document.addEventListener('DOMContentLoaded', () => {
     info: document.getElementById('screen-info')
   };
 
-  const coursesTitle = document.getElementById('courses-title');
-  const infoTitle = document.getElementById('info-title');
-  const infoText = document.getElementById('info-text');
-
-  const backFromCourses = document.getElementById('back-from-courses');
-  const backFromInfo = document.getElementById('back-from-info');
-
-  startBtn.addEventListener('click', () => {
+  document.getElementById('startBtn').addEventListener('click', () => {
     screens.home.style.display = 'none';
     screens.courses.style.display = 'flex';
   });
 
-  learnMoreBtn.addEventListener('click', () => {
+  document.getElementById('learnMoreBtn').addEventListener('click', () => {
     screens.home.style.display = 'none';
     screens.info.style.display = 'flex';
   });
 
-  backFromCourses.addEventListener('click', () => {
+  document.getElementById('back-from-courses').addEventListener('click', () => {
     screens.courses.style.display = 'none';
     screens.home.style.display = 'flex';
   });
 
-  backFromInfo.addEventListener('click', () => {
+  document.getElementById('back-from-info').addEventListener('click', () => {
     screens.info.style.display = 'none';
     screens.home.style.display = 'flex';
   });
 
   langSelect.addEventListener('change', (e) => {
-    const lang = e.target.value;
-    const t = translations[lang];
-    title.textContent = t.title;
-    slogan.textContent = t.slogan;
-    startBtn.textContent = t.start;
-    learnMoreBtn.textContent = t.learn;
-    footer.textContent = t.footer;
-    coursesTitle.textContent = t.coursesTitle;
-    infoTitle.textContent = t.infoTitle;
-    infoText.textContent = t.infoText;
-
-    t.courses.forEach((c, i) => {
-      const card = courseCards[i];
-      card.querySelector('h3').textContent = c.title;
-      card.querySelector('p').textContent = c.desc;
-    });
+    const lang = translations[e.target.value];
+    title.textContent = lang.title;
+    slogan.textContent = lang.slogan;
+    startBtn.textContent = lang.start;
+    learnMoreBtn.textContent = lang.learn;
+    footer.textContent = lang.footer;
+    coursesTitle.textContent = lang.coursesTitle;
   });
 });
