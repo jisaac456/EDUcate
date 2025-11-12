@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         sea fácil, dinámico y accesible desde cualquier lugar.</p>
 
         <h3>⚙️ ¿Cómo funciona?</h3>
-        <p>Los usuarios pueden explorar diferentes cursos organizados por materias. 
-        Cada curso incluye actividades prácticas, lecciones breves, videos y retos interactivos.</p>
+       <li>Los usuarios pueden explorar diferentes cursos organizados por materias. 
+        Cada curso incluye actividades prácticas, lecciones breves, videos y retos interactivos.</li>
 
         <h3>🎯 ¿Cómo se usa?</h3>
         <ol>
